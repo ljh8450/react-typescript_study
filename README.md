@@ -111,7 +111,7 @@ react-typescript-study
 
 ## 🧠 Key Points
 
-- t
+- upcomming
 
 ---
 
