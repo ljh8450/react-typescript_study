@@ -1,35 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { getEmotionImgById } from "./util";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className='App'>
+      <img src={getEmotionImgById(1)} alt="감정1" />
+      <img src={getEmotionImgById(2)} alt="감정2" />
+      <img src={getEmotionImgById(3)} alt="감정3" />
+      <img src={getEmotionImgById(4)} alt="감정4" />
+      <img src={getEmotionImgById(5)} alt="감정5" />
+    </div>
+  );
 }
 
-export default App
+export default App;
