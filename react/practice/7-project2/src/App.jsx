@@ -3,6 +3,7 @@ import './App.css'
 import Header from './compoenet/Header';
 import TodoEditor from './compoenet/TodoEditor';
 import TodoList from './compoenet/TodoList';
+import TestComp from './compoenet/TestComp';
 
 function App() {
   const mockTodo = [
@@ -53,6 +54,7 @@ function App() {
 
   return (
     <div className='App'>
+      <TestComp />
       <Header />
       <TodoEditor onCreate={onCreate}/>
       <TodoList todo={todo} onUpdate={onUpdate} onDelete={onDelete} />
